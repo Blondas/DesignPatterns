@@ -1,8 +1,8 @@
-package headFirst.b_ObserverPattern;
+package headFirst.b_ObserverPattern.custom;
 
-import headFirst.b_ObserverPattern.display.CurrentConditionsDisplay;
-import headFirst.b_ObserverPattern.display.ForecastDisplay;
-import headFirst.b_ObserverPattern.display.StatisticsDisplay;
+import headFirst.b_ObserverPattern.custom.display.CurrentConditionsDisplay;
+import headFirst.b_ObserverPattern.custom.display.ForecastDisplay;
+import headFirst.b_ObserverPattern.custom.display.StatisticsDisplay;
 
 public class WeatherStation {
     public static void main(String[] args) {

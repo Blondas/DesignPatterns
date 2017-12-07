@@ -1,14 +1,14 @@
-package headFirst.b_ObserverPattern.display;
+package headFirst.b_ObserverPattern.custom.display;
 
-import headFirst.b_ObserverPattern.Observer;
-import headFirst.b_ObserverPattern.Subject;
+import headFirst.b_ObserverPattern.custom.Observer;
+import headFirst.b_ObserverPattern.custom.Subject;
 
-public class StatisticsDisplay implements Observer, DisplayElement {
+public class CurrentConditionsDisplay implements Observer, DisplayElement {
     private float temperature;
     private float humidity;
     private Subject weatherData;
 
-    public StatisticsDisplay(Subject weatherData) {
+    public CurrentConditionsDisplay(Subject weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
@@ -22,6 +22,6 @@ public class StatisticsDisplay implements Observer, DisplayElement {
 
     @Override
     public void display() {
-        System.out.println("displaying weather statistic.");
+        System.out.println("displaying current conditions");
     }
 }

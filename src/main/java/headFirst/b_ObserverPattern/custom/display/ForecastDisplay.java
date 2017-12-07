@@ -1,9 +1,9 @@
-package headFirst.b_ObserverPattern.display;
+package headFirst.b_ObserverPattern.custom.display;
 
-import headFirst.b_ObserverPattern.Observer;
-import headFirst.b_ObserverPattern.Subject;
+import headFirst.b_ObserverPattern.custom.Observer;
+import headFirst.b_ObserverPattern.custom.Subject;
 
-public class ForecastDisplay implements Observer, DisplayElement {
+public class ForecastDisplay implements Observer, headFirst.b_ObserverPattern.custom.display.DisplayElement {
     private float temperature;
     private float humidity;
     private Subject weatherData;

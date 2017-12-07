@@ -1,4 +1,4 @@
-package headFirst.b_ObserverPattern;
+package headFirst.b_ObserverPattern.custom;
 
 import java.util.ArrayList;
 
