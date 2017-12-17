@@ -22,6 +22,6 @@ public class Soy extends CondimentDecorator {
 
     @Override
     public double cost() {
-        return beverage.cost() + .10;
+        return beverage.cost() + getCondimentCost();
     }
 }
