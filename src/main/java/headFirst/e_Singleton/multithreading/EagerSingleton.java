@@ -1,4 +1,4 @@
-package headFirst.e_Singleton.simpleExample;
+package headFirst.e_Singleton.multithreading;
 
 public class EagerSingleton {
     private static EagerSingleton uniqueInstance = new EagerSingleton();
