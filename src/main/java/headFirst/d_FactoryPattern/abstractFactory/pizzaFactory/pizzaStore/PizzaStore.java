@@ -1,6 +1,6 @@
-package headFirst.d_FactoryPattern.pizzaFactory.pizzaStore;
+package headFirst.d_FactoryPattern.abstractFactory.pizzaFactory.pizzaStore;
 
-import headFirst.d_FactoryPattern.pizzaFactory.pizza.Pizza;
+import headFirst.d_FactoryPattern.abstractFactory.pizzaFactory.pizza.Pizza;
 
 public abstract class PizzaStore {
     public Pizza orderPizza(String type) {

@@ -1,9 +1,9 @@
-package headFirst.d_FactoryPattern.pizzaFactory;
+package headFirst.d_FactoryPattern.abstractFactory.pizzaFactory;
 
-import headFirst.d_FactoryPattern.pizzaFactory.pizza.Pizza;
-import headFirst.d_FactoryPattern.pizzaFactory.pizzaStore.ChicagoPizzaStore;
-import headFirst.d_FactoryPattern.pizzaFactory.pizzaStore.NYPizzaStore;
-import headFirst.d_FactoryPattern.pizzaFactory.pizzaStore.PizzaStore;
+import headFirst.d_FactoryPattern.abstractFactory.pizzaFactory.pizza.Pizza;
+import headFirst.d_FactoryPattern.abstractFactory.pizzaFactory.pizzaStore.ChicagoPizzaStore;
+import headFirst.d_FactoryPattern.abstractFactory.pizzaFactory.pizzaStore.NYPizzaStore;
+import headFirst.d_FactoryPattern.abstractFactory.pizzaFactory.pizzaStore.PizzaStore;
 
 public class PizzaTestDrive {
     public static void main(String[] args) {
