@@ -1,4 +1,4 @@
-package headFirst.f_CommandPattern;
+package headFirst.f_CommandPattern.remoteControll;
 
 import headFirst.f_CommandPattern.command.Command;
 
