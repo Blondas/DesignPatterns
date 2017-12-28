@@ -31,5 +31,21 @@ public class RemoteLoader {
 
         StereoOnCommand stereoOn = new StereoOnCommand(stereo);
         StereoOffCommand stereoOff = new StereoOffCommand(stereo);
+
+        remoteControll.setCommand(0, livingRoomLightOn, livingRoomLightOff);
+        remoteControll.setCommand(1, kitchenLightOn, kitchenLightOff);
+        remoteControll.setCommand(2, ceilingFanOn, ceilingFanOff);
+        remoteControll.setCommand(3, stereoOn, stereoOff);
+
+        System.out.println(remoteControll);
+
+        remoteControll.onButtonWasPushed(0);
+        remoteControll.offButtonWasPushed(0);
+        remoteControll.onButtonWasPushed(1);
+        remoteControll.offButtonWasPushed(1);
+        remoteControll.onButtonWasPushed(2);
+        remoteControll.offButtonWasPushed(2);
+        remoteControll.onButtonWasPushed(3);
+        remoteControll.offButtonWasPushed(3);
     }
 }

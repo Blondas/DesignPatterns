@@ -3,11 +3,12 @@ package headFirst.f_CommandPattern.remoteControll;
 import headFirst.f_CommandPattern.command.Command;
 import headFirst.f_CommandPattern.command.NoCommand;
 
-public class RemoteControll {
+public class RemoteControllWithUndo {
     Command[] onCommands;
     Command[] offCommands;
+    Command undoCommand;
 
-    public RemoteControll() {
+    public RemoteControllWithUndo() {
         onCommands = new Command[7];
         offCommands = new Command[7];
 
@@ -16,6 +17,8 @@ public class RemoteControll {
             onCommands[i] = noCommand;
             offCommands[i] = noCommand;
         }
+
+        undoCommand = noCommand;
     }
 
     public void setCommand(int slot, Command onCommand, Command offCommand) {
@@ -26,10 +29,15 @@ public class RemoteControll {
     public void onButtonWasPushed(int slot) {
         if (onCommands[slot] != null)
         onCommands[slot].execute();
+        undoCommand = offCommands[slot]
     }
 
     public void offButtonWasPushed(int slot) {
         offCommands[slot].execute();
+    }
+
+    public void undoButtonWasPushed() {
+        undoCommand.execute();
     }
 
     public String toString() {

@@ -15,4 +15,9 @@ public class StereoOnCommand implements Command {
         stereo.setCd();
         stereo.setVolume(1);
     }
+
+    @Override
+    public void undo() {
+        stereo.off();
+    }
 }
