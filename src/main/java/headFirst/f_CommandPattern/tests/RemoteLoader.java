@@ -1,6 +1,13 @@
 package headFirst.f_CommandPattern.tests;
 
-import headFirst.f_CommandPattern.command.*;
+import headFirst.f_CommandPattern.command.ceilingFan.CeilingFanOffCommand;
+import headFirst.f_CommandPattern.command.ceilingFan.CeilingFanOnCommand;
+import headFirst.f_CommandPattern.command.garageDoor.GarageDoorCloseCommand;
+import headFirst.f_CommandPattern.command.garageDoor.GarageDoorOpenCommand;
+import headFirst.f_CommandPattern.command.lights.LightsOffCommand;
+import headFirst.f_CommandPattern.command.lights.LightsOnCommand;
+import headFirst.f_CommandPattern.command.stereo.StereoOffCommand;
+import headFirst.f_CommandPattern.command.stereo.StereoOnCommand;
 import headFirst.f_CommandPattern.receiver.CeilingFan;
 import headFirst.f_CommandPattern.receiver.GarageDoor;
 import headFirst.f_CommandPattern.receiver.Light;

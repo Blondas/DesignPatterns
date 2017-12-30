@@ -1,5 +1,6 @@
-package headFirst.f_CommandPattern.command;
+package headFirst.f_CommandPattern.command.lights;
 
+import headFirst.f_CommandPattern.command.Command;
 import headFirst.f_CommandPattern.receiver.Light;
 
 public class LightsOffCommand implements Command {

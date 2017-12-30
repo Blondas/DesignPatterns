@@ -1,5 +1,6 @@
-package headFirst.f_CommandPattern.command;
+package headFirst.f_CommandPattern.command.garageDoor;
 
+import headFirst.f_CommandPattern.command.Command;
 import headFirst.f_CommandPattern.receiver.GarageDoor;
 
 public class GarageDoorCloseCommand implements Command {

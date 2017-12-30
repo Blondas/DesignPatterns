@@ -1,7 +1,7 @@
 package headFirst.f_CommandPattern.tests;
 
 import headFirst.f_CommandPattern.remoteControll.SimpleRemoteControl;
-import headFirst.f_CommandPattern.command.LightsOnCommand;
+import headFirst.f_CommandPattern.command.lights.LightsOnCommand;
 import headFirst.f_CommandPattern.receiver.Light;
 
 public class RemoteControllTest {

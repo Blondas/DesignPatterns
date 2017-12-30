@@ -44,8 +44,8 @@ public class RemoteControllWithUndo {
         StringBuffer stringBuffer = new StringBuffer();
         stringBuffer.append("--- Remote Controll ---\n");
         for (int i = 0; i < onCommands.length; i++) {
-            stringBuffer.append("[slot" + i + "] " + onCommands[i].getClass().getName()
-                    + "     " + offCommands[i].getClass().getName() + "\n");
+            stringBuffer.append("[slot" + i + "] " + onCommands[i].getClass().getSimpleName()
+                    + "     " + offCommands[i].getClass().getSimpleName() + "\n");
         }
         return stringBuffer.toString();
     }

@@ -1,17 +1,34 @@
 package headFirst.f_CommandPattern.receiver;
 
 public class CeilingFan {
-    String name;
+    public static final int HIGH = 3;
+    public static final int MEDIUM = 2;
+    public static final int LOW = 1;
+    public static final int OFF = 0;
+    String location;
+    int speed;
 
-    public CeilingFan(String name) {
-        this.name = name;
+    public CeilingFan(String location) {
+        this.location = location;
     }
 
     public void on() {
-        System.out.println("fan on in " + name);
+        System.out.println("fan on in " + location);
     }
 
+    public void high() {
+        speed = HIGH;
+    }
+    public void medium() {
+        speed = MEDIUM;
+    }
+    public void low() {
+        speed = LOW;
+    }
     public void off() {
-        System.out.println("fan off in " + name);
+        speed = OFF;
+    }
+    public int getSpeed() {
+        return speed;
     }
 }

@@ -1,8 +1,8 @@
 package headFirst.f_CommandPattern.tests;
 
 import headFirst.f_CommandPattern.remoteControll.SimpleRemoteControl;
-import headFirst.f_CommandPattern.command.GarageDoorOpenCommand;
-import headFirst.f_CommandPattern.command.LightsOnCommand;
+import headFirst.f_CommandPattern.command.garageDoor.GarageDoorOpenCommand;
+import headFirst.f_CommandPattern.command.lights.LightsOnCommand;
 import headFirst.f_CommandPattern.receiver.GarageDoor;
 import headFirst.f_CommandPattern.receiver.Light;
 
